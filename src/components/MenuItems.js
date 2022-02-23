@@ -10,18 +10,18 @@ export const MenuItems=[
         cName:'nav-link'
     },
     {
-        title: 'Service',
-        url:'#',
-        cName:'nav-link'
-    },
-    {
         title: 'Career',
         url:'#',
         cName:'nav-link'
     },
     {
-        title: 'SignUp',
+        title: 'Event',
         url:'#',
-        cName:'nav-link-mobile'
+        cName:'nav-link'
+    },
+    {
+        title: 'Product',
+        url:'#',
+        cName:'nav-link'
     },
 ]
