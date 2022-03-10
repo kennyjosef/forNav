@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-weight: 400; */
 }
 .overall{
     background-image: url("../Assesst/image-hero.jpg");
@@ -15,9 +14,12 @@
 .navbarItems{
     height: 110px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
+    
     
 }
 .navbar-logo{
@@ -35,12 +37,14 @@
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
+    
     list-style: none;
     text-align: center;
-    /* justify-content: center; */
-    /* width: 70px; */
+    justify-content: center;
+    width: 70px;
 }
 .nav-link{
+    font-size: 19px;
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -51,9 +55,21 @@
 .nav-link-mobile{
     display: none;
 }
+.active{
+    opacity: 1;
+}
 .border{
-    padding-left: 15rem;
+    padding-left: 7rem;
     padding-top: 5rem;
+    width: 80%;
+    margin: auto;
+}
+.fa-bars,
+.fa-times{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
 }
 .border h1{
     border: 0.1px solid white;
@@ -62,9 +78,251 @@
     padding:  2rem;
     font-weight: 400;
 }
-@media (max-width:670px){
-    .border{
-        padding: 2rem;
-        padding-top: 5rem;
+ /* STYLE FOR CONTENT.JS */
+ .content{
+    height: 600px;
+    position: relative;
+    padding-top: 70px;
+    padding-left: 10px;
+    width: 80%;
+    margin: auto;
+}
+.box{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+}
+
+ .red{
+    /* background: #ff0000; */
+    z-index: 1;
+}
+
+.green{
+    top: 230px;
+    left: 590px;
+    background: #fff;
+    z-index: 2;
+    width: 600px;
+    padding: 3rem 1rem;
+}
+.green h1{
+    font-weight: 300;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    
+} 
+.green p{
+    padding-left: 2rem;
+    text-align: justify;
+    
+} 
+
+/* style for button */
+.forDesktopbtn button{
+    width: 70px;
+    border: 2px solid black;
+    color: black;
+    height: 30px;
+    cursor: pointer;
+}
+.forDesktopbtn button:hover{
+    color: white;
+    background: black;
+    border-radius: 3px;
+}
+
+
+
+
+@media(max-width:1050px){
+    .content{
+        width: 80%;
+        margin: auto;
+    }
+    .box img{
+        width: 500px;
+        height: 100%;
+    }
+    .box{
+        width: 400px;
+        height: 350px;
+        position: absolute;
+    }
+    
+     .red{
+        background: #ff0000;
+        z-index: 1;
+    }
+    
+    .green{
+        top: 200px;
+        left: 410px;
+        background: #fff;
+        z-index: 2;
+        width: 500px;
+        padding: 3rem 1rem;
+    }
+    .green h1{
+        font-weight: 300;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        
+    } 
+    .green p{
+        padding-left: 1rem;
+        text-align: justify;
+        
+    } 
+}
+
+/* RESPONSIVENESS FOR NAV */
+@media(max-width: 930px){
+    .nav-menu{
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    transition: .5s ease-in-out;
+    transform: translateX(-500px);
+    z-index: 10;
+    }
+
+    .nav-menu.active{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(-10px);
+        /* opacity: .8; */
+    }
+
+    .navbarItems {
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    .fa-bars,
+    .fa-times{
+        display: block;
+        z-index: 10000000;
+    }
+    .navbar-logo{
+        padding-right: 5rem;
     }
 }
+@media (max-width:700px){
+    .border{
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .content img{
+        width: 350px;
+        padding-left: 30px;
+        
+    }
+    .box{
+        position: unset;
+    }
+    .green{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        margin: auto;
+        /* width: 300px; */
+        padding-left: 10px;
+        width: 80%;
+    }
+    .red{
+        display: none;
+        width: 350px;
+        background-color: #fff ;
+    }
+    .green h1{
+        font-weight: 400;
+        text-align: center;
+    } 
+    .green p{
+        text-align: justify;
+        font-size: 20px;
+    } 
+}
+
+ @media (max-width:600px){
+    .overall{
+        background-image: url(../Assesst/navPIC.jpg);
+        height: 400px;
+    }
+    .navbarItems{
+        padding-left: 20px;
+    }
+    .navbarItems h1{
+        margin-left:0px;
+    }
+    .content{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content img{
+        width: 350px;
+        padding-right: 35px;
+        text-align: center;
+        
+    }
+    .box{
+        position: unset;
+    }
+    .green{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        margin: auto;
+        width: 300px;
+        left: 3;
+        padding-left: 10px;
+    }
+    .red{
+        display: contents;
+        width: 350px;
+        background-color: #fff ;
+    }
+    .green h1{
+        font-weight: 300;
+        padding-left: 5px;
+        padding-bottom: 1rem;
+        text-align: center;
+        
+    } 
+    .green p{
+        padding-left: 2px;
+        padding-right: 8px;
+        text-align: justify;
+        font-size: 16px;
+        
+    }  
+} 
+
+

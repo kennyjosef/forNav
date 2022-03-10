@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Logo1 from "../Assesst/react.png" 
-import Logo2 from "../Assesst/icon-close.svg";
 import{MenuItems} from './MenuItems';
+// import "./Responsive.css";
 import './style.css';
 
 class Navbar extends Component{
@@ -19,7 +18,7 @@ class Navbar extends Component{
                              <i className={this.state.clicked ? 'fas fa-times':"fas fa-bars"}></i>
             
                             </div>
-                             <ul className={this.state.clicked ? <img src={Logo2}/> : "nav-menu"}>
+                             <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
                                 {MenuItems.map((items, index)=>{
                               return(
                                 <li key={index}>
@@ -36,6 +35,7 @@ class Navbar extends Component{
                     <div className='border'>
                          <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
                     </div>
+
             </div>
         )
     }

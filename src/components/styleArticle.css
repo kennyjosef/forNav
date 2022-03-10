@@ -1,0 +1,273 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.item1{
+    display: flex;
+    justify-content: space-between; 
+    padding-top : 2rem;
+    padding-bottom: 2rem;
+}
+.item1 h2{
+    font-weight: 350;
+}
+.item3{
+    display: none;
+}
+.item2{
+    display: grid;
+    grid-template-rows: 450px 450px;
+    /* padding-left: 40px; */
+    grid-row-gap: 30px;
+}
+.item2 h2{
+    width: 280px;
+}
+
+.el1{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px; 
+    grid-column-gap: 40px;
+    /* margin: auto; */
+    width: 80%;
+}
+
+.el2{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px; 
+    grid-column-gap: 40px;
+    width: 80%;
+    /* margin: auto; */
+}
+.el1a{
+    background-image: url(../Assesst/logo2.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+.el1a:hover{
+    opacity: .6;
+}
+.el1b{
+    background-image: url(../Assesst/logo3.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.el1b:hover{
+    opacity: .6;
+}
+.el1c{
+    background-image: url(../Assesst/logo4.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.el1c:hover{
+    opacity: .6;
+}
+.el1d{
+    background-image: url(../Assesst/logo5.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.el1d:hover{
+    opacity: .6;
+}
+.el1e{
+    background-image: url(../Assesst/logo6.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.el1e:hover{
+    opacity: .6;
+}
+.el1f{
+    background-image: url(../Assesst/logo7.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.el1f:hover{
+    opacity: .6;
+}
+.el1g{
+    background-image: url(../Assesst/logo8.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.el1g:hover{
+    opacity: .6;
+}
+.el1h{
+    background-image: url(../Assesst/logo9.jpg);
+    background-size: 280px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.el1h:hover{
+    opacity: .6;
+}
+.forMobileBtn{
+    display: none;
+}
+
+@media(max-width:1050px){
+    .item2{
+        grid-template-rows: 350px 350px;
+        grid-row-gap: 10px;
+    }
+    .el1, .el2{
+        grid-template-columns: 200px 200px 200px 200px; 
+        grid-column-gap: 5px;
+      
+    }
+
+    .item2 h2{
+        width: 180px;
+    }
+
+    }
+    @media (max-width:700px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+        .forDesktopbtn{
+            display: none;
+        }
+        .item2{
+            display: none;
+        }
+        .item3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .item3 h2{
+            width: 400px;
+            height: 145px;
+            color: #fff;
+            display: flex;
+            align-items: flex-end;
+            font-weight: 300;
+            padding: 30px 30px;
+            cursor: pointer;
+        }
+        .el3a{
+            background-image: url(../Assesst/image-deep-earth.jpg);
+            background-size: 400px;
+            margin-bottom: 20px;
+        }
+        .el3a:hover{
+            opacity: .6;
+        }
+        .el3b{
+            background-image: url(../Assesst/image-night-arcade.jpg);
+            background-size: 400px;
+            margin-bottom: 20px;
+        }
+        .el3b:hover{
+            opacity: .6;
+        }
+        .el3c{
+            background-image: url(../Assesst/image-soccer-team.jpg);
+            background-size: 400px;
+            margin-bottom: 20px;
+        }
+        .el3c:hover{
+            opacity: .6;
+        }
+        .el3d{
+            background-image: url(../Assesst/image-grid.jpg);
+            background-size: 400px;
+            margin-bottom: 20px;
+        }
+        .el3d:hover{
+            opacity: .6;
+        }
+        .el3e{
+            background-image: url(../Assesst/image-from-above.jpg);
+            background-size: 400px;
+            margin-bottom: 20px;
+        }
+        .el3e:hover{
+            opacity: .6;
+        }
+        .el3f{
+            background-image: url(../Assesst/image-pocket-borealis.jpg);
+            background-size: 400px;
+            margin-bottom: 20px;
+        }
+        .el3f:hover{
+            opacity: .6;
+        }
+        .el3g{
+            background-image: url(../Assesst/image-curiosity.jpg);
+            background-size: 400px;
+            margin-bottom: 20px;
+        }
+        .el3g:hover{
+            opacity: .6;
+        }
+        .el3h{
+            background-image: url(../Assesst/image-fisheye.jpg);
+            background-size: 400px;
+        }
+        .el3h:hover{
+            opacity: .6;
+        }
+        /* .forMobileBtn button{
+            display: content;
+            height: 100px;
+        } */
+    }
+    @media (max-width:500px){
+        .item3 h2{
+                width: 300px;
+        }
+    }
+        
+    
